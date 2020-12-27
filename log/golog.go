@@ -1,0 +1,1 @@
+#https://www.flysnow.org/2017/05/06/go-in-action-go-log.html
