@@ -1,9 +1,10 @@
 #go 设置代理下载
-export https_proxy=http://127.0.0.1:8118
-export http_proxy=http://127.0.0.1:8118
-git config --global http.proxy 'http://127.0.0.1:8118'
-git config --global https.proxy 'http://127.0.0.1:8118'
+HTTP_PROXY=http://192.168.10.8:1081
 
+export https_proxy=${HTTP_PROXY}
+export http_proxy=${HTTP_PROXY}
+git config --global http.proxy "'${HTTP_PROXY}'"
+git config --global https.proxy "'${HTTP_PROXY}'"
 
 #取消代理
 unset http_proxy
